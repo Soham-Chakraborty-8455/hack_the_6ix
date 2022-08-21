@@ -39,8 +39,9 @@ def getNumber(fingers):
     elif (s == "10001"):
         return 10
     elif (s == "11001"):
-        time.sleep(3)
+        time.sleep(2)
         return pyautogui.press("space")
+        
     elif (s == "01001"):
         return 30
 

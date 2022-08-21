@@ -1,9 +1,11 @@
 import cv2
+from pynput.keyboard import Key, Controller
 import numpy as np
 import Hand_Tracking_Module as ht
-import pyautogui
+
 import time
 
+keyboard=Controller()
 cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
 cap.set(3, 700)
 cap.set(4, 600)
@@ -39,9 +41,9 @@ def getNumber(fingers):
     elif (s == "10001"):
         return 10
     elif (s == "11001"):
-        time.sleep(2)
-        return pyautogui.press("space")
-        
+        time.sleep(3)
+        return keyboard.press(Key.space)
+
     elif (s == "01001"):
         return 30
 

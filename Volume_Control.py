@@ -1,7 +1,7 @@
 import cv2
 import mediapipe
 import numpy as np
-import HandTrackingModule as ht
+import Hand_Tracking_Module as ht
 import math
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
